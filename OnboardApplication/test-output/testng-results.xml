@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-04T18:28:34 WAT" name="OnboardApplication" finished-at="2022-05-04T18:30:20 WAT" duration-ms="105994">
+    <groups>
+    </groups>
+    <test started-at="2022-05-04T18:28:34 WAT" name="OnboardApp Test" finished-at="2022-05-04T18:30:20 WAT" duration-ms="105994">
+      <class name="com.OnboardApplication.TestCases.TC_LoginTest_001">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:com.OnboardApplication.TestCases.TC_LoginTest_001@dbf57b3]" started-at="2022-05-04T18:28:35 WAT" name="Setup" finished-at="2022-05-04T18:28:45 WAT" duration-ms="10558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="loginTest()[pri:0, instance:com.OnboardApplication.TestCases.TC_LoginTest_001@dbf57b3]" started-at="2022-05-04T18:28:45 WAT" name="loginTest" finished-at="2022-05-04T18:30:20 WAT" duration-ms="94367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OnboardApplication.TestCases.TC_LoginTest_001@dbf57b3]" started-at="2022-05-04T18:30:20 WAT" name="tearDown" finished-at="2022-05-04T18:30:20 WAT" duration-ms="727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OnboardApplication.TestCases.TC_LoginTest_001 -->
+    </test> <!-- OnboardApp Test -->
+  </suite> <!-- OnboardApplication -->
+</testng-results>

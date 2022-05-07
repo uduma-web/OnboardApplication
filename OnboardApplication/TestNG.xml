@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="OnboardApplication">
+
+	<listeners>
+		<listener class-name="com.OnboardApplication.Utilities.Reporting" />
+	</listeners>
+
+
+	<test name="OnboardApp Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_CreateValidAccount_019"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_CreateInvalidAccount_008"/>-->
+		<class name="com.OnboardApplication.TestCases.TC_LoginTest_001"/>
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_InvalidLogin_017"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddTool_002"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_EditToolCard_006"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddBusinessUseCaseToTool_007"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeleteTool_003"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddGuides"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeleteGuides_005"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddPasswordCredentials_010"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_EditPasswordSecret_014"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_TrustedSourcesIP_028"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_RequestSecret_024"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AcceptSecretRequest_024"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeletePasswordSecret_012"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddApiKeySecret_011"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_GrantTeammatesAccessToSecret_020"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddNewKeyValueToApiSecret_015"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeleteKeyValueOfApiSecret_016"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_RecommendAcceptApiSecret_009"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AcceptRecommendation_021"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_RecommendRejectApiSecret_022"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_RejectRecommendation_023"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeleteApiSecret_013"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddSecretFolder_025"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingSecretToProject_033"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingTeammateToProject_034"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeleteProject_026"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_ShareSecret_027"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingGroups_029"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingSecretsToGroup_030"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingProjectsToGroup_031"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeleteGroupPage_032"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_ProfileSettings_018"/>-->
+
+		</classes>
+
+	</test>
+
+</suite>
