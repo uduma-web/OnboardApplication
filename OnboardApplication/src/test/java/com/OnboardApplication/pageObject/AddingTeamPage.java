@@ -6,10 +6,10 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AddingGroupsPage 
+public class AddingTeamPage 
 {
 	WebDriver fdriver;
-	public AddingGroupsPage(WebDriver jdriver)
+	public AddingTeamPage(WebDriver jdriver)
 	{
 		fdriver=jdriver;
 		PageFactory.initElements(jdriver, this);
@@ -22,15 +22,15 @@ public class AddingGroupsPage
 	
 	@FindBy(xpath="//*[@id=\"app\"]/div/div/nav/div/div/div/div[2]/div/div/div[2]/div/div/div/a[2]/span")
 	@CacheLookup
-	WebElement ManageTeam;
+	WebElement ManageOrganization;
 	
-	@FindBy(xpath="/html/body/div/div/div/div[2]/main/div/div[2]/div[1]/nav/a[4]")
+	@FindBy(xpath="//*[@id=\"app\"]/div/div/div[2]/main/div[1]/div[2]/div[2]/div[2]/nav/a[4]")
 	@CacheLookup
-	WebElement Groups;
+	WebElement Teams;
 	
-	@FindBy(xpath="//*[@id=\"app\"]/div/div/div[2]/main/div/div[2]/div[2]/div[1]/div/div[3]/span/a")
+	@FindBy(xpath="//*[@id=\"app\"]/div/div/div[2]/main/div[2]/div/div/div[1]/div/div[3]/span/a")
 	@CacheLookup
-	WebElement CreateAGroup;
+	WebElement CreateATeam;
 	
 	@FindBy(xpath="//*[@id=\"title\"]")
 	@CacheLookup
@@ -49,19 +49,19 @@ public class AddingGroupsPage
 		UserProfile.click();
 	}
 	
-	public void ClickingTeam()
+	public void ClickingOrganization()
 	{
-		ManageTeam.click();
+		ManageOrganization.click();
 	}
 	
-	public void ClickingGroups()
+	public void ClickingTeams()
 	{
-		Groups.click();
+		Teams.click();
 	}
 	
 	public void ClickingCreate()
 	{
-		CreateAGroup.click();
+		CreateATeam.click();
 	}
 	
 	public void EnteringTitle(String name)
@@ -74,7 +74,7 @@ public class AddingGroupsPage
 		AddTeammate.click();
 	}
 	
-	public void CreatingGroup()
+	public void CreatingTeam()
 	{
 		Create.click();
 	}

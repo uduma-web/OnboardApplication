@@ -41,7 +41,7 @@
 		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingTeammateToProject_034"/>-->
 		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeleteProject_026"/>-->
 		<!--  -->class name="com.OnboardApplication.TestCases.TC_ShareSecret_027"/>-->
-		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingGroups_029"/>-->
+		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingTeams_029"/>-->
 		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingSecretsToGroup_030"/>-->
 		<!--  -->class name="com.OnboardApplication.TestCases.TC_AddingProjectsToGroup_031"/>-->
 		<!--  -->class name="com.OnboardApplication.TestCases.TC_DeleteGroupPage_032"/>-->

@@ -5,13 +5,13 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.OnboardApplication.pageObject.AddingGroupsPage;
+import com.OnboardApplication.pageObject.AddingTeamPage;
 import com.OnboardApplication.pageObject.LoginPage;
 
-public class TC_AddingGroups_029 extends BaseClass
+public class TC_AddingTeams_029 extends BaseClass
 {
 	@Test
-	public void CreatingGroup() throws InterruptedException, IOException
+	public void CreatingTeams() throws InterruptedException, IOException
 	{
 		logger.info("URL is Entered");
 		
@@ -28,37 +28,37 @@ public class TC_AddingGroups_029 extends BaseClass
 		logger.info("Signin button Clicked");
 		Thread.sleep(6000);
 		
-		AddingGroupsPage Group=new AddingGroupsPage(driver);
+		AddingTeamPage Team=new AddingTeamPage(driver);
 		
-		Group.ClickingUserProfile();
+		Team.ClickingUserProfile();
 		logger.info("Clicking on user menu");
 		Thread.sleep(2000);
 		
-		Group.ClickingTeam();
+		Team.ClickingOrganization();
 		logger.info("Clicking on manage your Team");
 		Thread.sleep(4000);
 		
-		Group.ClickingGroups();
+		Team.ClickingTeams();
 		logger.info("Clicking on Groups");
 		Thread.sleep(2000);
 		
-		Group.ClickingCreate();
+		Team.ClickingCreate();
 		logger.info("Clicking on Create Group");
 		Thread.sleep(2000);
 		
-		Group.EnteringTitle("TESTING");
+		Team.EnteringTitle("TESTING");
 		logger.info("Entering name of Group");
 		Thread.sleep(2000);
 		
-		Group.AddingTeammate();
+		Team.AddingTeammate();
 		logger.info("Adding a teammate");
 		Thread.sleep(2000);
 		
-		Group.CreatingGroup();
+		Team.CreatingTeam();
 		logger.info("Create button is clicked");
 		Thread.sleep(2000);
 		
-		boolean res=driver.getPageSource().contains("Group created");
+		boolean res=driver.getPageSource().contains("Team created");
 		
 		if(res==true)
 		{
@@ -68,7 +68,7 @@ public class TC_AddingGroups_029 extends BaseClass
 		}
 		else
 		{
-			captureScreen(driver, "CreatingGroup");
+			captureScreen(driver, "CreatingTeams");
 			Assert.assertTrue(false);
 			logger.info("Test Failed");
 		}
