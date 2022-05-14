@@ -35,7 +35,7 @@ public class TC_LoginTest_001 extends BaseClass {
 		prop.load(new FileInputStream(
 				"C:\\Users\\VIUMEE\\eclipse-victor's\\OnboardApplication\\Configurations\\config.properties"));
 		List<String> emailText = emailutils.getUnreadMessageByFromEmail(emailutils.connectToGmail(prop), "Inbox","no-reply@onboardbase.com", "Onboardbase Login Verification");
-//		String myString = 'https://devapp.onboardbase.com//confirm-email/';
+//		String myString = 'https://app.onboardbase.com//confirm-email/';
 //		Pattern p = Pattern.compile("");
 //		Matcher m = p.matcher(myString);
 //		System.out.println("number of content =========== :" + m.group(1));
